@@ -11,14 +11,6 @@ export default function App() {
     PersonEndpoint.findAll().then(setPeople);
   }, []);
 
-  async function dataProvider(
-    params: GridDataProviderParams<Person>,
-    callback: GridDataProviderCallback<Person>
-  ){
-    const pageResponse = await PersonEndpoint.getPeople(params.page, params.pageSize);
-    callback(pageResponse.people, pageResponse.totalCount);
-  }
-
   return (
     <div className="flex flex-col gap-m p-m">
       <h1>Lazy-load / infinite scroll data grid</h1>
