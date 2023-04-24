@@ -1,6 +1,6 @@
 # Lazy load grid in Hilla + React
 
-Example code for https://youtu.be/DoMy2WPR4PI
+Read tutorial here: https://hilla.dev/blog/react-grid-paging-lazy-load/
 
 Uses Hilla 2.0.
 
